@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+	<html lang ="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>About us</title>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css/">
+			
+			<style>
+			*{
+				box-sizing:border-box;
+				margin:0px;
+				padding:0px;
+				
+			}
+			body{
+				font-size:14px;
+				font-family:arial, sans-serif;
+				line-height:1.5;
+			}
+			.container{
+				padding:0 10px;
+				box-sizing:border-box;
+				margin:0 auto;
+				width:100%;
+				max-width:1200px;
+			}
+			.hamburger{
+				color:black;
+				display:none;
+				font-size:24px;
+				background:none;
+				border:none;
+				cursor:pointer;
+				order: -1;
+				padding:3px;
+				border:2px solid black;
+				border-radius:5px;
+				
+			}
+			.nav-left{
+				display:flex;
+				flex:1;
+				list-style-type:none;
+				gap:24px;
+				padding:5px;
+				
+			}
+			@media(max-width:900px){
+				.btn-appointment{
+					display:none;
+				}
+				.nav-left{
+					display:none;
+				}
+				.hamburger{
+					display:block;
+				}
+				.nav-container{
+					justify-content:space-between;
+				}
+				.nav-logo{
+					position:absolute;
+					left:50%;
+					transform:translateX(-50%);
+				}
+				.nav-right{
+					flex:0;
+				}
+				.nav-left.show-mobile{
+					display:flex;
+					flex-direction:column;
+					position:absolute;
+					top:60px;
+					left:0;
+					width:100%;
+					background:white;
+					padding:20px;
+					gap:15px;
+					border-bottom:1px solid #eee;
+					z-index:100;
+				}
+			}
+			@media(max-width:480px){
+				.nav-logo a{
+					font-size:18px;
+					letter-spacing:1px;
+				}
+			}
+			#headline{
+				background:black;
+				padding:20px;
+			}
+			#headline h3{
+				color:darkorange;
+				text-align:center;
+			}
+			.nav-bar{
+				color:white;
+				padding:15px 0;
+				border-bottom:1px solid #e5e5e5;
+			}
+			.nav-container{
+				display:flex;
+				justify-content:space-between;
+				align-items:center;
+				max-width:1400px;
+				padding:0 15px;
+				margin:0 auto;
+				position:relative;
+			}
+
+			.nav-right{
+				display:flex;
+				flex:1;
+				align-items:center;
+				gap:25px;
+				justify-content: flex-end;
+			}
+			.nav-logo {
+				flex:0 1 auto;
+				text-align:center;
+	
+			}
+			.nav-logo a{
+				letter-spacing:3px;
+				text-decoration:none;
+				font-size:24px;
+				font-weight:bold;
+				font-family:Times New Roman, serif;
+			}
+			.nav-left a{
+				text-decoration:none;
+				font-size:16px;
+				font-family:Times New Roman, serif;
+			}
+			.nav-right a{
+				text-decoration:none;
+				font-size:18px;
+				font-family:Arial, sans-serif;
+			}
+			.btn-appointment{
+				background-color:black;
+				color:darkorange;
+				padding:5px;
+				margin:10px;
+				border-radius:3px;
+				font-weight:500;
+			}
+			.btn-appointment:hover{
+				background-color:#333;
+			}
+			a{
+				color:black;
+			}
+			.carouse-box{
+				display:flex;
+				justify-content:space-around;
+				align-items:center;
+				background-color:darkorange;
+			}
+			.inner-box{
+				width:90%;
+				max-width:700px;
+				flex:0 0 auto;
+				margin:0 auto;
+				padding:40px;
+				box-sizing:border-box;
+				height:450px;
+				background-color:#fff;
+			}
+			
+			</style>
+		</head>
+		<body>
+			<div class="container">
+				<div id = "headline">
+					<h3>Custom made for you - 100 days fitting guarantee - Premium European craftsmanship</h3>
+				</div>
+				
+				<nav class="nav-bar">
+					<div class="nav-container">
+						<button class="hamburger"><i class="fa-solid fa-bars"></i> ⇛ </button>
+						<ul class="nav-left">
+							<li><a href="index.html">shop</a></li>	
+							<li><a href="#">stores</a></li>	
+							<li><a href="#">About</a></li>	
+							<li><a href="#">Books</a></li>	
+							<li><a href="#">style Journal</a></li>	
+							<li><a href="#">wedding Suit</a></li>
+						</ul>
+						
+						<div class="nav-logo">
+							<a href="#">DHINOZINTA</a>
+						</div>
+						
+						<div class="nav-right">
+							<a href="#" class="btn-appointment">Book a free appointment</a>
+							<a href="#" class="login-btn">Login</a>
+							<a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+						</div>
+						
+					</div>
+					
+							
+				</nav>
+				<div class="carouse-box">
+					<div class="inner-box">hvjfgvjuhgykugiuyguhyig</div>
+					
+				</div>
+			
+			</div>	
+			<script>
+				const hamburger = document.querySelector('.hamburger'); 
+				const navLeft = document.querySelector('.nav-left');
+				
+				hamburger.addEventListener('click', function(){
+					navLeft.classList.toggle('show-mobile');
+				});
+			</script>	
+		</body>
+	</html>
